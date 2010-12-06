@@ -1,3 +1,9 @@
+/*
+ * CustomEditField.java
+ * UI Framework for Blackberry
+ * by : Wahyu Sumartha
+ * Date : 6 December 2012
+ */
 package com.framework.ui.component;
 
 import com.framework.ui.preferences.FontPreference;
