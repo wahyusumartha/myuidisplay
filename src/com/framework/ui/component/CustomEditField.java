@@ -17,20 +17,20 @@ public class CustomEditField extends EditField {
 	private int foregroundColor = Color.BLACK;
 
 	/*
-	 * PADDING SETTINGS
-	 */
-	private static final int TOP_PADDING = 5;
-	private static final int RIGHT_PADDING = 10;
-	private static final int BOTTOM_PADDING = 5;
-	private static final int LEFT_PADDING = 20;
-
-	/*
 	 * MARGIN SETTING
 	 */
 	private static final int TOP_MARGIN = 5;
 	private static final int RIGHT_MARGIN = 5;
 	private static final int BOTTOM_MARGIN = 5;
 	private static final int LEFT_MARGIN = 5;
+
+	/*
+	 * PADDING SETTINGS
+	 */
+	private static final int TOP_PADDING = 5;
+	private static final int RIGHT_PADDING = 5;
+	private static final int BOTTOM_PADDING = 5;
+	private static final int LEFT_PADDING = LEFT_MARGIN + 5;
 
 	/*
 	 * BORDER TYPE
@@ -45,11 +45,11 @@ public class CustomEditField extends EditField {
 	 */
 	public CustomEditField() {
 		super();
-		fontPreference.setFontPreference("System", Font.PLAIN, 7);
+		fontPreference.setFontPreference("BBSerif", Font.PLAIN, 7);
 		setFontPreference(fontPreference);
 		setPaddingPreference();
 		setMarginPreference();
-		setBorderShape(0);
+		setBorderShape(1);
 	}
 
 	protected void paintBackground(Graphics graphics) {
@@ -57,11 +57,9 @@ public class CustomEditField extends EditField {
 		switch (borderShape) {
 		case RECT_BORDER:
 			rectBorder(graphics);
-			invalidate();
 			break;
 		case ROUND_RECT_BORDER:
 			roundRectBorder(graphics);
-			invalidate();
 			break;
 		default:
 			break;
@@ -83,24 +81,22 @@ public class CustomEditField extends EditField {
 	}
 
 	/*
-	 * Drawing ROUND RECT BORDER
+	 * @Drawing ROUND RECT BORDER
 	 */
 	private void roundRectBorder(Graphics graphics) {
 		/*
 		 * Fill Round Rectangle in EditField
 		 */
 		graphics.setColor(backgroundColor);
-		graphics.fillRoundRect(10, 0, Display.getWidth()
-				- (LEFT_MARGIN + RIGHT_MARGIN + LEFT_PADDING + RIGHT_PADDING),
-				getHeight(), 20, 20);
+		graphics.fillRoundRect(0, 0, Display.getWidth()
+				- (LEFT_MARGIN + RIGHT_MARGIN), getHeight(), 20, 20);
 
 		/*
 		 * Drawing RoundRectangle in EditField
 		 */
 		graphics.setColor(borderColor);
-		graphics.drawRoundRect(10, 0, Display.getWidth()
-				- (LEFT_MARGIN + RIGHT_MARGIN + LEFT_PADDING + RIGHT_PADDING),
-				getHeight(), 20, 20);
+		graphics.drawRoundRect(0, 0, Display.getWidth()
+				- (LEFT_MARGIN + RIGHT_MARGIN), getHeight(), 20, 20);
 
 		/*
 		 * Drawing Font Preference
@@ -118,17 +114,15 @@ public class CustomEditField extends EditField {
 		 * Fill Round Rectangle in EditField
 		 */
 		graphics.setColor(backgroundColor);
-		graphics.fillRoundRect(10, 0, Display.getWidth()
-				- (LEFT_MARGIN + RIGHT_MARGIN + LEFT_PADDING + RIGHT_PADDING),
-				getHeight(), 10, 10);
+		graphics.fillRoundRect(0, 0, Display.getWidth()
+				- (LEFT_MARGIN + RIGHT_MARGIN), getHeight(), 10, 10);
 
 		/*
 		 * Drawing RoundRectangle in EditField
 		 */
 		graphics.setColor(borderColor);
-		graphics.drawRoundRect(10, 0, Display.getWidth()
-				- (LEFT_MARGIN + RIGHT_MARGIN + LEFT_PADDING + RIGHT_PADDING),
-				getHeight(), 10, 10);
+		graphics.drawRoundRect(0, 0, Display.getWidth()
+				- (LEFT_MARGIN + RIGHT_MARGIN), getHeight(), 10, 10);
 
 		/*
 		 * Drawing Font Preference
