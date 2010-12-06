@@ -6,7 +6,6 @@ import net.rim.device.api.ui.Color;
 import net.rim.device.api.ui.Field;
 import net.rim.device.api.ui.Font;
 import net.rim.device.api.ui.Graphics;
-import net.rim.device.api.ui.component.LabelField;
 
 public class CustomLabelField extends Field {
 
