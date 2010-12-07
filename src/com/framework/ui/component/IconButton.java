@@ -106,6 +106,15 @@ public class IconButton extends Field {
 		invalidate();
 	}
 
+	protected void fieldChangeNotify(int context) {
+		this.getChangeListener().fieldChanged(this, context);
+	}
+
+	protected boolean navigationClick(int status, int time) {
+		fieldChangeNotify(1);
+		return true;
+	}
+
 	/*
 	 * SET MARGIN
 	 */
