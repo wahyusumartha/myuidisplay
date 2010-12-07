@@ -1,3 +1,9 @@
+/*
+ * IconButton.java
+ * Creating Icon Button with Round Rectangle Border
+ * by : wahyusumartha
+ * date : 7-12-2010
+ */
 package com.framework.ui.component;
 
 import com.framework.ui.preferences.FontPreference;
