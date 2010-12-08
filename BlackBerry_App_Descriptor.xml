@@ -1,5 +1,5 @@
 <Properties ModelVersion="1.1.2">
-  <General Title="UI Framework" Version="1.0.0" Vendor="BlackBerry Developer" Description=""/>
+  <General Title="UI Framework" Version="1.0.0" Vendor="Wahyu Sumartha Priya Dharma " Description="UI Framework for Blackberry Platform"/>
   <Application Type="BlackBerry Application" MainMIDletName="" MainArgs="" HomeScreenPosition="0" StartupTier="7" IsSystemModule="false" IsAutostartup="false"/>
   <Resources hasTitleResource="false" TitleResourceBundleName="" TitleResourceBundleRelativePath="" TitleResourceBundleClassName="" TitleResourceBundleKey="" DescriptionId="">
     <Icons/>
