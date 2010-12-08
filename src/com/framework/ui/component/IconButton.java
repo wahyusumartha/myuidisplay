@@ -6,8 +6,6 @@
  */
 package com.framework.ui.component;
 
-import com.framework.ui.preferences.FontPreference;
-
 import net.rim.device.api.system.Bitmap;
 import net.rim.device.api.ui.Color;
 import net.rim.device.api.ui.Field;
@@ -129,7 +127,7 @@ public class IconButton extends Field {
 	}
 
 	/*
-	 * SET PADDING
+	 * SET PADDING 
 	 */
 	private void setPreferencePadding() {
 		setPadding(TOP_PADDING, RIGHT_PADDING, BOTTOM_PADDING, LEFT_PADDING);
