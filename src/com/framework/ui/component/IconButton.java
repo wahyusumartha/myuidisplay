@@ -26,9 +26,9 @@ public class IconButton extends Field {
 	/*
 	 * PADDING SETTING
 	 */
-	private static final int TOP_PADDING = 5;
+	private static final int TOP_PADDING = 2;
 	private static final int RIGHT_PADDING = 2;
-	private static final int BOTTOM_PADDING = 5;
+	private static final int BOTTOM_PADDING = 2;
 	private static final int LEFT_PADDING = 2;
 
 	/*
@@ -69,7 +69,7 @@ public class IconButton extends Field {
 		 * Drawing Box
 		 */
 		graphics.setColor(backgroundColor);
-		graphics.fillRect(0, 0, fieldWidth, fieldHeight);
+		graphics.fillRoundRect(0, 0, fieldWidth, fieldHeight, 15, 15);
 
 		/*
 		 * Drawing Round Rectangle Border
@@ -127,10 +127,16 @@ public class IconButton extends Field {
 	}
 
 	/*
-	 * SET PADDING 
+	 * SET PADDING
 	 */
 	private void setPreferencePadding() {
 		setPadding(TOP_PADDING, RIGHT_PADDING, BOTTOM_PADDING, LEFT_PADDING);
+	}
+
+	protected void drawFocus(Graphics graphics, boolean on) {
+		/*
+		 * NOTHING
+		 */
 	}
 
 }
