@@ -111,7 +111,7 @@ public class IconButton extends Field {
 	}
 
 	protected void fieldChangeNotify(int context) {
-		this.getChangeListener().fieldChanged(this, context);
+		   this.getChangeListener().fieldChanged(this, context);
 	}
 
 	protected boolean navigationClick(int status, int time) {
