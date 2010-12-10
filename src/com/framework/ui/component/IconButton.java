@@ -18,18 +18,18 @@ public class IconButton extends Field {
 	/*
 	 * MARGIN SETTING (inner)
 	 */
-	private static final int TOP_MARGIN = 2;
+	private static final int TOP_MARGIN = 1;
 	private static final int RIGHT_MARGIN = 2;
-	private static final int BOTTOM_MARGIN = 2;
+	private static final int BOTTOM_MARGIN = 1;
 	private static final int LEFT_MARGIN = 2;
 
 	/*
 	 * PADDING SETTING
 	 */
-	private static final int TOP_PADDING = 2;
-	private static final int RIGHT_PADDING = 2;
-	private static final int BOTTOM_PADDING = 2;
-	private static final int LEFT_PADDING = 2;
+	private static final int TOP_PADDING = 0;
+	private static final int RIGHT_PADDING = 0;
+	private static final int BOTTOM_PADDING = 0;
+	private static final int LEFT_PADDING = 0;
 
 	/*
 	 * variable to set Height and width
@@ -111,7 +111,7 @@ public class IconButton extends Field {
 	}
 
 	protected void fieldChangeNotify(int context) {
-		   this.getChangeListener().fieldChanged(this, context);
+		this.getChangeListener().fieldChanged(this, context);
 	}
 
 	protected boolean navigationClick(int status, int time) {
